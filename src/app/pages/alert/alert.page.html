@@ -1,0 +1,17 @@
+<app-header titulo="Alert"></app-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+ <ion-button (click)="onClick()" expand="block">
+  Click me
+ </ion-button>
+ <ion-button (click)="onMultiClick()" expand="block">
+  Mostrar Multi Alter
+</ion-button>
+<ion-button id="present-alert">Click Me</ion-button>
+<ion-alert
+  trigger="present-alert"
+  header="Please enter your info"
+  [buttons]="alertButtons"
+  [inputs]="alertInputs"
+></ion-alert>
+</ion-content>
